@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quantum Physics Explained</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+            font-size: 2.5em;
+        }
+        
+        .banner-image {
+            width: 100%;
+            height: 200px;
+            background: url('https://www.ucd.ie/quantum/t4media/about_banner.jpg') no-repeat center center;
+            background-size: cover;
+        }
+        
+        .box-container {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin: 20px 5%;
+        }
+        
+        .box {
+            width: 30%;
+            background-color: #fff;
+            padding: 20px;
+            margin: 10px;
+            text-align: center;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+            transition: 0.3s;
+        }
+
+        .box img {
+            width: 100%;
+            height: 350px;
+            object-fit: cover;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+
+        .box:hover {
+            transform: scale(1.05);
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+        }
+        
+        @media only screen and (max-width: 768px) {
+            .box {
+                width: 45%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        Quantum Physics Explained
+    </div>
+    
+    <div class="banner-image"></div>
+    
+    <div class="box-container">
+        <a href="wave_particle_duality.html" class="box">
+            <img src="https://www.researchgate.net/profile/Ait-Mansour-El-Houssain/post/Why-is-wave-particle-duality-important/attachment/5f10133b3f16f9000123fbe4/AS%3A889605998010372%401589110006616/download/Double-slit.jpg" alt="Wave Particle Duality Image">
+            Wave Particle Duality
+        </a>
+        <a href="wave_function.html" class="box">
+            <img src="https://scitechdaily.com/images/wavefunction-plot.jpg" alt="The Wave Function Image">
+            The Wave Function
+        </a>
+        <a href="quantization.html" class="box">
+            <img src="https://slideplayer.com/slide/4178697/14/images/30/Continuous+vs.+Quantized.jpg" alt="Quantization Image">
+            Quantization
+        </a>
+        <a href="heisenberg.html" class="box">
+            <img src="https://dwg31ai31okv0.cloudfront.net/images/Article_Images/ImageForArticle_261_16686903178778156.jpg" alt="Heisenberg Uncertainty Principle Image">
+            The Heisenberg Uncertainty Principle
+        </a>
+        <a href="fundamental_particles.html" class="box">
+            <img src="https://slideplayer.com/slide/12700804/76/images/36/NEW+STANDARD+MODEL+of+ELEMENTARY+PARTICLES.jpg" alt="Fundamental Particles Image">
+            The Fundamental Particles
+        </a>
+    </div>
+
+</body>
+</html>

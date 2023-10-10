@@ -39,6 +39,15 @@
         .description {
             text-align: justify;
         }
+
+        .slider-container {
+            margin: 20px 0;
+        }
+
+        .slider-description {
+            text-align: center;
+            margin-top: 10px;
+        }
     </style>
 </head>
 
@@ -60,8 +69,42 @@
             <p>
                 The Heisenberg Uncertainty Principle is more than just an abstract concept; it has real-world implications. It plays a key role in the behavior of atoms and subatomic particles, and it underlies many phenomena in quantum mechanics, from the stability of atoms to the properties of materials at the nanoscale. This principle, alongside wave-particle duality, shapes our modern understanding of the quantum world and its often counterintuitive nature.
             </p>
-        </div>        
+        </div>
+
+        <!-- Interactive demonstration -->
+        <div class="slider-container">
+            <h3>Demonstration of Uncertainty</h3>
+            <p>Adjust the precision of the particle's position:</p>
+            <input type="range" min="1" max="100" value="50" id="positionSlider">
+            <div class="slider-description">
+                <p>Precision in Position: <span id="positionValue">Medium</span></p>
+                <p>Uncertainty in Momentum: <span id="momentumValue">Medium</span></p>
+            </div>
+        </div>
     </div>
+
+    <!-- JavaScript for the demonstration -->
+    <script>
+        const positionSlider = document.getElementById('positionSlider');
+        const positionValue = document.getElementById('positionValue');
+        const momentumValue = document.getElementById('momentumValue');
+
+        positionSlider.oninput = function() {
+            if (this.value < 34) {
+                positionValue.textContent = 'Low';
+                momentumValue.textContent = 'High';
+            } else if (this.value < 67) {
+                positionValue.textContent = 'Medium';
+                momentumValue.textContent = 'Medium';
+            } else {
+                positionValue.textContent = 'High';
+                momentumValue.textContent = 'Low';
+            }
+        }
+    </script>
+
+</body>
+</html>
 
 </body>
 </html>
